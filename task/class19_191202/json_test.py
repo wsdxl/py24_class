@@ -39,7 +39,7 @@ json_data = {"count": 18, "next": "http://api.keyou.site:8000/projects/?page=2&s
 
 import jsonpath
 id=jsonpath.jsonpath(json_data,'$..id')
-# print(id)
+print(id)
 name=jsonpath.jsonpath(json_data,'$..name')
 # print(name[2])
 datas=jsonpath.jsonpath(json_data,'$.*')
@@ -57,7 +57,7 @@ json_data = '{"name":"musen","id":19,"msg":null}'
 import json
 # json.loads将json字符串类型数据转换成字典类型数据
 res1=json.loads(json_data)
-print(res1,type(res1))
+# print(res1,type(res1))
 # json.dumps将字典类型数据转换成json字符串类型数据
 res2=json.dumps(data)
-print(res2,type(res2))
+# print(res2,type(res2))
